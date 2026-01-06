@@ -1,0 +1,140 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--color-muted);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--color-background);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--color-foreground);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.auth-logo svg {
+  color: var(--color-primary);
+}
+
+.auth-card h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.auth-description {
+  color: var(--color-muted-foreground);
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.forgot-password {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  text-align: right;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 0.875rem;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--color-muted-foreground);
+}
+
+.auth-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+}
+
+.checkbox-group label {
+  font-weight: 400;
+  margin: 0;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: -1rem;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+}
+
+
+
